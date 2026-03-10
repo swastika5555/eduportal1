@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">Student Portal</div>
+
+<ul class="menu">
+<li><a href="index.html">Dashboard</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="assignments.html">Assignments</a></li>
+<li><a href="attendance.html">Attendance</a></li>
+<li><a href="messages.html">Messages</a></li>
+<li><a href="settings.html">Settings</a></li>
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+<!-- HEADER -->
+
+<div class="header">
+
+<input class="search" placeholder="Search students...">
+
+<div class="header-right">
+
+<div class="toggle" onclick="toggleMode()">🌙</div>
+
+<img src="https://i.pravatar.cc/150" class="avatar">
+
+</div>
+
+</div>
+
+
+<!-- PROFILE CARD -->
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/150">
+
+<div>
+<h3>John Doe</h3>
+<p>Computer Science</p>
+<p>Semester 5</p>
+<p>ID: STU2024001</p>
+</div>
+
+</div>
+
+
+<!-- STATS -->
+
+<div class="grid">
+
+<div class="card">
+
+<h4>Attendance</h4>
+
+<div class="circle">
+
+<svg viewBox="0 0 36 36">
+
+<path
+stroke="#eee"
+stroke-width="3"
+fill="none"
+d="M18 2a16 16 0 0 1 0 32a16 16 0 0 1 0-32"
+/>
+
+<path
+stroke="#6366f1"
+stroke-width="3"
+fill="none"
+stroke-dasharray="85,100"
+d="M18 2a16 16 0 0 1 0 32a16 16 0 0 1 0-32"
+/>
+
+</svg>
+
+<span>85%</span>
+
+</div>
+
+</div>
+
+<div class="card">
+<h4>GPA</h4>
+<div class="counter" data-target="3.8">0</div>
+</div>
+
+<div class="card">
+<h4>Completed</h4>
+<div class="counter" data-target="24">0</div>
+</div>
+
+<div class="card">
+<h4>Pending</h4>
+<div class="counter" data-target="5">0</div>
+</div>
+
+</div>
+
+
+<!-- ANNOUNCEMENTS -->
+
+<div class="announcements">
+
+<h3>Announcements</h3>
+
+<div class="item">
+<span>Math Assignment Due</span>
+<span class="badge high">High</span>
+</div>
+
+<div class="item">
+<span>Midterm Exam Schedule</span>
+<span class="badge medium">Medium</span>
+</div>
+
+<div class="item">
+<span>College Fest</span>
+<span class="badge low">Low</span>
+</div>
+
+</div>
+
+
+<!-- TASK MANAGER -->
+
+<div class="tasks">
+
+<h3>Task Manager</h3>
+
+<div class="task-input">
+
+<input id="taskInput" placeholder="Add new task">
+
+<button onclick="addTask()">Add</button>
+
+</div>
+
+<ul id="taskList"></ul>
+
+<div class="progress-bar">
+<div class="progress-fill" id="progressFill"></div>
+</div>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
